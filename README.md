@@ -1,8 +1,8 @@
 # TypeScript Express Seed #
 This project is meant to serve as a template, boilerplate, or a seed for others. It is meant to outline a typical structure of a nodejs express application along with essential dependencies and common features that get built in this API framework.
 
-## Initial Computer Setup ##
-This is a nodejs, docker application. Noted below are the required downloads to run any application with nodejs & docker.
+## Initial Development Environment Setup ##
+This is a nodejs, docker application. This section will outline the installs that must exist on an engineer's machine to run the application. Noted below are the required downloads to run any application with nodejs & docker.
 
 * [Docker](https://www.docker.com/products/docker-desktop/)
 * [nvm](https://github.com/nvm-sh/nvm)

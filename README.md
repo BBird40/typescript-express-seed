@@ -19,4 +19,5 @@ After the development environment, aka the computer where the code will be writt
 
 ## References ##
 
-* 
+* [TS Config Reference](https://www.typescriptlang.org/tsconfig)
+* [TS Config With Description](https://gist.github.com/t18n/88cebd2b355887351e8080cbb6a6b4ba)

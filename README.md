@@ -17,6 +17,14 @@ After the development environment, aka the computer where the code will be writt
 * * Run via terminal `nvm use`
   * If the version from the `.nvmrc` is not installed, run via terminal `nvm install` and then `nvm use`.
 
+## Solution Architecture & Design ##
+This section will outline the folder structure as it pertains to solution architecture and design. Furthermore, it will outline specific design patterns and software principles followed detailing the how and why.
+
+* db
+* infrastructure
+* src
+* test
+
 ## References ##
 
 * [TS Config Reference](https://www.typescriptlang.org/tsconfig)

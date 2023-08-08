@@ -23,7 +23,7 @@ This section will outline the folder structure as it pertains to solution archit
 * db - The files used to create the database and hold "migrations" of the database over time. A typical ORM will come with a migration solution or leverage a SQL based migration tool.
 * infrastructure - This stores all the files required to host this application. The files can range from Terraform to Ansible to Helm charts to Chef/Puppet.
   * Storing the infrastructure files in the application source code can be a source of debate. Some believe that storing terraform in a separate repo for the application is more suitable as it allows for a smoother CI/CD pipeline. Essentially, infrastructure being built and destroyed based on a single repository's activity. If this is the case, feel free to lift and shift the folder to a new repo.
-* src - All the source code that makes the application what it is.
+* src - All the source code that makes the application what it is. Following a Domain Driven Design layer architecture approach where the app with its presentation and handlers coordinate with the domain and the baseline infrastructure to obfuscate and create a single layers of responsibility.
 * test - All the tests (unit, integration, and end-to-end) that validate the application's logic.
 
 ## References ##
@@ -31,3 +31,5 @@ This section will outline the folder structure as it pertains to solution archit
 * [TS Config Reference](https://www.typescriptlang.org/tsconfig)
 * [TS Config With Description](https://gist.github.com/t18n/88cebd2b355887351e8080cbb6a6b4ba)
 * [Sqitch - Sql based migration tool](https://sqitch.org/)
+* [Domain Driven Design Folder Structure](https://enlabsoftware.com/development/domain-driven-design-in-asp-net-core-applications.html)
+* [Domain Driven Design Shopping Card App](https://github.com/bazaglia/shopping-cart)

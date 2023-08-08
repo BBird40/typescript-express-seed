@@ -3,5 +3,14 @@
     "version": "0.0.1",
     "description": "TypeScript Express Nodejs Seed Project",
     "author": "Bryan Byrd",
-    "license": "UNLICENSED"
+    "license": "UNLICENSED",
+    "dependencies": {
+      "dotenv": "16.0.0",
+      "express": "4.18.2",
+      "http-status-codes": "^2.2.0",
+      "inversify": "6.0.1",
+      "inversify-express-utils": "6.4.3",
+      "inversify-logger-middleware": "3.1.0",
+      "winston": "3.7.2"
+    }
   }

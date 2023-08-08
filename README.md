@@ -20,12 +20,14 @@ After the development environment, aka the computer where the code will be writt
 ## Solution Architecture & Design ##
 This section will outline the folder structure as it pertains to solution architecture and design. Furthermore, it will outline specific design patterns and software principles followed detailing the how and why.
 
-* db
-* infrastructure
-* src
-* test
+* db - The files used to create the database and hold "migrations" of the database over time. A typical ORM will come with a migration solution or leverage a SQL based migration tool.
+* infrastructure - This stores all the files required to host this application. The files can range from Terraform to Ansible to Helm charts to Chef/Puppet.
+  * Storing the infrastructure files in the application source code can be a source of debate. Some believe that storing terraform in a separate repo for the application is more suitable as it allows for a smoother CI/CD pipeline. Essentially, infrastructure being built and destroyed based on a single repository's activity. If this is the case, feel free to lift and shift the folder to a new repo.
+* src - All the source code that makes the application what it is.
+* test - All the tests (unit, integration, and end-to-end) that validate the application's logic.
 
 ## References ##
 
 * [TS Config Reference](https://www.typescriptlang.org/tsconfig)
 * [TS Config With Description](https://gist.github.com/t18n/88cebd2b355887351e8080cbb6a6b4ba)
+* [Sqitch - Sql based migration tool](https://sqitch.org/)
